@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px 2px;
+}
+
+.box span {
+    position: absolute;
+    animation: owt;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    box-shadow: 0 0 0.10px 1px black, 0 0 0.10px 2px black, 0 0 0.10px 3px black;
+}
+
+.box span:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.box span:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes owt {
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+    12.5% {
+        left: 50%;
+        top: 0%;
+    }
+    25% {
+        left: 80%;
+        top: 0%;
+    }
+    37.5% {
+        left: 80%;
+        top: 50%;
+    }
+    50% {
+        left: 80%;
+        top: 80%;
+    }
+    62.5% {
+        left: 50%;
+        top: 80%;
+    }
+    75% {
+        left: 0%;
+        top: 80%;
+    }
+    87.5% {
+        left: 0%;
+        top: 50%;
+    }
+    100% {
+        left: 0%;
+        top: 10%;
+    }
+}
